@@ -17,12 +17,32 @@
                 <a href="#ofertas">Ofertas</a>
                 <a href="#contacto">Contacto</a>
             </div>
-            <div class="cart-icon">
+            <div class="cart-icon" onclick="toggleCart()">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
             </div>
         </nav>
     </header>
+
+    <!-- Modal del carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Carrito de Compras</h2>
+                <span class="close-cart" onclick="toggleCart()">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Los items del carrito se mostrarán aquí -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-amount">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="hero">
@@ -55,7 +75,7 @@
         <section id="ofertas" class="featured-products">
             <h2>Ofertas Destacadas</h2>
             <div class="product-grid">
-                <!-- Products will be dynamically loaded here -->
+                <!-- Los productos se cargarán dinámicamente aquí -->
             </div>
         </section>
     </main>
