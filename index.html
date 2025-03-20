@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MultiTienda</div>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenidos a MultiTienda</h1>
+            <p>Tu tienda online para todo lo que necesitas</p>
+        </section>
+
+        <section id="categorias" class="categories">
+            <h2>Nuestras Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="placeholder-electronics.jpg" alt="Electrónica">
+                    <h3>Electrónica</h3>
+                </div>
+                <div class="category-card">
+                    <img src="placeholder-fashion.jpg" alt="Moda">
+                    <h3>Moda</h3>
+                </div>
+                <div class="category-card">
+                    <img src="placeholder-home.jpg" alt="Hogar">
+                    <h3>Hogar</h3>
+                </div>
+                <div class="category-card">
+                    <img src="placeholder-sports.jpg" alt="Deportes">
+                    <h3>Deportes</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="featured-products">
+            <h2>Ofertas Destacadas</h2>
+            <div class="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@multitienda.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MultiTienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
